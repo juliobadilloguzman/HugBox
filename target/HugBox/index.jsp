@@ -58,6 +58,12 @@
         </div>
     </div>
 
+    <s:form action="modelo" method="POST">
+        <s:textfield name="nombre" label="Nombre"/>
+        <s:textfield name="edad" label="Edad"/>
+        <s:submit />
+    </s:form>
+
 </div>
 
 

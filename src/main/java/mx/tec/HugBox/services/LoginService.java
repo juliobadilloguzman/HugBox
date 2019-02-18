@@ -1,4 +1,4 @@
 package mx.tec.HugBox.services;
 
-public class LoginService {
+public class LoginService implements ILoginService {
 }

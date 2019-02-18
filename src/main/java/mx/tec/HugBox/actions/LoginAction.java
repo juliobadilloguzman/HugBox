@@ -10,8 +10,6 @@ import org.apache.struts2.convention.annotation.InterceptorRef;
 import org.apache.struts2.convention.annotation.ParentPackage;
 import org.apache.struts2.convention.annotation.Result;
 
-@ParentPackage("default")
-
 
 public class LoginAction extends ActionSupport implements ModelDriven<Users> {
 
