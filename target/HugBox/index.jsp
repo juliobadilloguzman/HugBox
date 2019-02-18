@@ -38,17 +38,17 @@
                 <div class="form-items text-center">
                     <h3 class="text-center">¡Bienvenido de nuevo!</h3>
                     <p class="text-center">Nos da gusto que estes de vuelta</p>
-                    <form>
-                        <input class="form-control" type="email" placeholder="Correo Electrónico" required>
+
+                        <input class="form-control" type="email" placeholder="Correo Electrónico" required id="email">
                         <!-- <span class="text-danger mb-2">Incorrecto</span> -->
-                        <input class="form-control" type="password" placeholder="Contraseña" required>
+                        <input class="form-control" type="password" placeholder="Contraseña" required id="password">
                         <!-- <span class="text-danger">Incorrecto</span> -->
 
                         <!-- BOTON -->
                         <div class="form-button">
-                            <button type="button" class="ibtn">Ingresar</button>
+                            <button type="button" id="btn-login" class="ibtn">Ingresar</button>
                         </div>
-                    </form>
+
 
                     <div class="page-links mt-3">
                         <a href="registro.jsp">Crear nueva cuenta</a>
