@@ -7,6 +7,8 @@ public class Users implements Serializable {
     private String email;
     private String password;
 
+    public Users(){}
+
     public int getIdUsers() {
         return idUsers;
     }
