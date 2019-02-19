@@ -12,7 +12,7 @@ $(document).ready(function () {
         img: 'img/share-solid.svg',
         title: 'share button',
         fun: function () {
-            alert('i am update button')
+            $('.shareModal').modal('toggle');
         }
     }];
 

@@ -94,7 +94,7 @@
                 <img class="card-img-top" src="img/prev.jpg" alt="Card image cap">
 
                 <div class="card-body">
-                    <button class="contextMenu text-muted removeButtonStyle styleButton">
+                    <button data-target=".shareModal" class="contextMenu text-muted removeButtonStyle styleButton">
                         Prueba.html
                     </button>
                 </div>
@@ -107,7 +107,7 @@
                 <img class="card-img-top" src="img/prev.jpg" alt="Card image cap">
 
                 <div class="card-body">
-                    <button class="contextMenu text-muted removeButtonStyle styleButton">
+                    <button data-target=".shareModal" class="contextMenu text-muted removeButtonStyle styleButton">
                         Maestria.docx
                     </button>
                 </div>
@@ -119,7 +119,7 @@
                 <img class="card-img-top" src="img/prev.jpg" alt="Card image cap">
 
                 <div class="card-body">
-                    <button class="contextMenu text-muted removeButtonStyle styleButton">
+                    <button data-target=".shareModal" class="contextMenu text-muted removeButtonStyle styleButton">
                         Estilos.css
                     </button>
                 </div>
@@ -131,7 +131,7 @@
                 <img class="card-img-top" src="img/prev.jpg" alt="Card image cap">
 
                 <div class="card-body">
-                    <button class="contextMenu text-muted removeButtonStyle styleButton">
+                    <button data-target=".shareModal" class="contextMenu text-muted removeButtonStyle styleButton">
                         TOE.cpp
                     </button>
                 </div>
@@ -209,6 +209,9 @@
 </div>
 
 <!-- MODALES -->
+
+<!--MODAL SUBIR ARCHIVO -->
+
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
@@ -229,6 +232,34 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary bRadius" data-dismiss="modal">Cerrar</button>
                 <button type="button" class="btn colorPrimaryBg text-white bRadius">Subir</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--MODAL COMPARTIR LINK-->
+
+<div class="modal fade bd-example-modal-lg shareModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Link para compartir</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row justify-content-center">
+                    <div class="col-10">
+                        <input type="text" class="form-control" value="https://docs.google.com/document/d/17xONRHdXRH-91-rUPfZncdyiGaEEgRC-XrkAQDl51Ic/edit?usp=sharing">
+                    </div>
+                    <div class="col-2">
+                        <button class="btn btn-primary bRadius">Copiar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn colorPrimaryBg text-white bRadius">Listo</button>
             </div>
         </div>
     </div>
