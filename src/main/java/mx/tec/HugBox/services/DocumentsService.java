@@ -35,10 +35,11 @@ public class DocumentsService implements IDocumentsService{
                 Documents row = new Documents();
                 row.setIdDocuments(rs.getInt("idDocuments"));
                 row.setFilename(rs.getString("filename"));
-                row.setContent(BlobToFile(rs.getBinaryStream("content")));
+                row.setContent(BlobToFile(rs.getBinaryStream("content"), rs.getString("filename")) );
                 row.setLink(rs.getString("link"));
                 row.setType(rs.getString("type"));
                 result.add(row);
+                System.out.println(result.size());
             }
             rs.close();
             csmt.close();
@@ -48,9 +49,9 @@ public class DocumentsService implements IDocumentsService{
         }
         return result;
     }
-    File BlobToFile(InputStream input){
+    File BlobToFile(InputStream input, String nombre){
         try {
-            File file = new File("C:\\Users\\Angel GTZ\\Desktop");
+            File file = new File("/Users/julioguzman/Documents", nombre);
             OutputStream outputStream = new FileOutputStream(file);
             IOUtils.copy(input, outputStream);
             outputStream.close();

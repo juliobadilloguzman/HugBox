@@ -36,6 +36,11 @@
             <result name="error">error.jsp</result>
         </action>
 
+        <action class="mx.tec.HugBox.actions.FilesAction" name="showFiles">
+            <result name="success">home.jsp</result>
+
+        </action>
+
     </package>
 
 </struts>

@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="s" uri="/struts-tags" %>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -87,126 +88,53 @@
 
 
         <!-- Archivos -->
-        <div class="card-group mt-5" style="width:100% !important">
-
-            <div class="card">
-
-                <img class="card-img-top" src="img/prev.jpg" alt="Card image cap">
-
-                <div class="card-body">
-                    <button data-target=".shareModal" class="contextMenu text-muted removeButtonStyle styleButton">
-                        Prueba.html
-                    </button>
-                </div>
-
-            </div>
+        <s:iterator value="listaDocumentos">
+            <div class="card-group mt-5 d-flex" style="width:20% !important">
 
 
-            <div class="card">
 
-                <img class="card-img-top" src="img/prev.jpg" alt="Card image cap">
+                    <div class="card">
 
-                <div class="card-body">
-                    <button data-target=".shareModal" class="contextMenu text-muted removeButtonStyle styleButton">
-                        Maestria.docx
-                    </button>
-                </div>
+                        <img class="card-img-top" src="img/prev.jpg" alt="Card image cap">
+
+                        <div class="card-body">
+                            <button data-target=".shareModal" class="contextMenu text-muted removeButtonStyle styleButton">
+                                <s:property value="%{filename}" />.<s:property value="%{type}" />
+                            </button>
+                        </div>
+
+                    </div>
 
             </div>
+        </s:iterator>
 
-            <div class="card">
 
-                <img class="card-img-top" src="img/prev.jpg" alt="Card image cap">
 
-                <div class="card-body">
-                    <button data-target=".shareModal" class="contextMenu text-muted removeButtonStyle styleButton">
-                        Estilos.css
-                    </button>
-                </div>
 
-            </div>
 
-            <div class="card">
 
-                <img class="card-img-top" src="img/prev.jpg" alt="Card image cap">
-
-                <div class="card-body">
-                    <button data-target=".shareModal" class="contextMenu text-muted removeButtonStyle styleButton">
-                        TOE.cpp
-                    </button>
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="card-group mt-5" style="width:100% !important">
-            <div class="card">
-                <img class="card-img-top" src="img/prev.jpg" alt="Card image cap">
-                <div class="card-body">
-
-                    <p class="card-text"><small class="text-muted">Archivos.cpp</small></p>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="img/prev.jpg" alt="Card image cap">
-                <div class="card-body">
-
-                    <p class="card-text"><small class="text-muted">SYS.jjs</small></p>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="img/prev.jpg" alt="Card image cap">
-                <div class="card-body">
-
-                    <p class="card-text"><small class="text-muted">Prueba.cpp</small></p>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="img/prev.jpg" alt="Card image cap">
-                <div class="card-body">
-
-                    <p class="card-text"><small class="text-muted">Prueba2.cpp</small></p>
-                </div>
-            </div>
-        </div>
-
-        <div class="card-group mt-5" style="width:100% !important">
-            <div class="card">
-                <img class="card-img-top" src="img/prev.jpg" alt="Card image cap">
-                <div class="card-body">
-
-                    <p class="card-text"><small class="text-muted">Archivos.cpp</small></p>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="img/prev.jpg" alt="Card image cap">
-                <div class="card-body">
-
-                    <p class="card-text"><small class="text-muted">SYS.jjs</small></p>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="img/prev.jpg" alt="Card image cap">
-                <div class="card-body">
-
-                    <p class="card-text"><small class="text-muted">Prueba.cpp</small></p>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="img/prev.jpg" alt="Card image cap">
-                <div class="card-body">
-
-                    <p class="card-text"><small class="text-muted">Prueba2.cpp</small></p>
-                </div>
-            </div>
-        </div>
 
 
     </div>
 
 
 </div>
+
+<!-- ******* PRUEBA ********* -->
+
+<h1>Prueba</h1>
+
+<table>
+    <s:iterator value="listaDocumentos">
+        <tr>
+            <td><s:property value="%{filename}" /></td>
+            <td><s:property value="%{type}" /></td>
+        </tr>
+    </s:iterator>
+</table>
+
+
+
 
 <!-- MODALES -->
 
