@@ -1,11 +1,17 @@
 $(document).ready(function () {
 
+    //Actualiza el id del archivo que presiono
+    $('.getId').on('click', function(){
+       $('#idArchivo').val($(this).data('id'));
+
+    });
+
     var menu = [{
         name: 'Descargar',
         img: 'img/download-solid.svg',
         title: 'create button',
         fun: function () {
-            alert('i am add button')
+            alert("Descargando: " +  $('#idArchivo').val());
         }
     }, {
         name: 'Compartir',

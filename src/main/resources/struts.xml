@@ -36,7 +36,7 @@
             <result name="error">error.jsp</result>
         </action>
 
-        <action class="mx.tec.HugBox.actions.FilesAction" name="showFiles">
+        <action class="mx.tec.HugBox.actions.FilesAction" name="files">
             <result name="success">home.jsp</result>
 
         </action>

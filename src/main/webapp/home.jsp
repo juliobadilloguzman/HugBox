@@ -7,6 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="s" uri="/struts-tags" %>
+<%@ taglib prefix="input" uri="/struts-tags" %>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -88,52 +89,36 @@
 
 
         <!-- Archivos -->
-        <s:iterator value="listaDocumentos">
-            <div class="card-group mt-5 d-flex" style="width:20% !important">
 
+        <input type="hidden" id="idArchivo">
 
+            <div class="card-group mt-5 row" style="width:100% !important">
 
-                    <div class="card">
+                <s:iterator value="listaDocumentos">
 
-                        <img class="card-img-top" src="img/prev.jpg" alt="Card image cap">
+                    <div class="col-3 mt-3">
+                        <div class="card">
 
-                        <div class="card-body">
-                            <button data-target=".shareModal" class="contextMenu text-muted removeButtonStyle styleButton">
-                                <s:property value="%{filename}" />.<s:property value="%{type}" />
-                            </button>
+                            <img class="card-img-top" src="img/prev.jpg" alt="Card image cap">
+
+                            <div class="card-body">
+                                <button data-target=".shareModal" class="contextMenu text-muted removeButtonStyle styleButton getId" data-id='<s:property value="%{idDocuments}" />'>
+                                    <s:property value="%{filename}" /><s:property value="%{type}" />
+                                </button>
+                            </div>
+
                         </div>
-
                     </div>
 
+                </s:iterator>
+
             </div>
-        </s:iterator>
-
-
-
-
-
-
 
 
     </div>
 
 
 </div>
-
-<!-- ******* PRUEBA ********* -->
-
-<h1>Prueba</h1>
-
-<table>
-    <s:iterator value="listaDocumentos">
-        <tr>
-            <td><s:property value="%{filename}" /></td>
-            <td><s:property value="%{type}" /></td>
-        </tr>
-    </s:iterator>
-</table>
-
-
 
 
 <!-- MODALES -->

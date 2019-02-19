@@ -27,7 +27,7 @@ $(document).ready(function(){
 
                     }else{
 
-                        window.location.replace("home.jsp");
+                        window.location.replace("files");
 
                     }
 
