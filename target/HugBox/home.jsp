@@ -19,14 +19,15 @@
     <link rel="stylesheet" href="css/stylesHome.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
           crossorigin="anonymous">
+    <link rel="stylesheet" href="css/contextMenu.css">
     <!-- CSS -->
-    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/alertifyjs@1.11.2/build/css/alertify.min.css"/>
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/alertifyjs@1.11.2/build/css/alertify.min.css" />
     <!-- Default theme -->
-    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/alertifyjs@1.11.2/build/css/themes/default.min.css"/>
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/alertifyjs@1.11.2/build/css/themes/default.min.css" />
     <!-- Semantic UI theme -->
-    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/alertifyjs@1.11.2/build/css/themes/semantic.min.css"/>
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/alertifyjs@1.11.2/build/css/themes/semantic.min.css" />
     <!-- Bootstrap theme -->
-    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/alertifyjs@1.11.2/build/css/themes/bootstrap.min.css"/>
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/alertifyjs@1.11.2/build/css/themes/bootstrap.min.css" />
 </head>
 
 <body>
@@ -64,7 +65,7 @@
     </nav>
 
 
-    <div class="container mb-5">
+    <div class="container">
 
         <!-- Title -->
         <div class="row containerTitle justify-content-between mt-5">
@@ -87,34 +88,56 @@
 
         <!-- Archivos -->
         <div class="card-group mt-5" style="width:100% !important">
-            <div class="card">
-                <img class="card-img-top" src="img/prev.jpg" alt="Card image cap">
-                <div class="card-body">
 
-                    <p class="card-text"><small class="text-muted">Archivo1.rar</small></p>
-                </div>
-            </div>
             <div class="card">
-                <img class="card-img-top" src="img/prev.jpg" alt="Card image cap">
-                <div class="card-body">
 
-                    <p class="card-text"><small class="text-muted">Maestria.docx</small></p>
+                <img class="card-img-top" src="img/prev.jpg" alt="Card image cap">
+
+                <div class="card-body">
+                    <button class="contextMenu text-muted removeButtonStyle styleButton">
+                        Prueba.html
+                    </button>
                 </div>
+
             </div>
+
+
             <div class="card">
-                <img class="card-img-top" src="img/prev.jpg" alt="Card image cap">
-                <div class="card-body">
 
-                    <p class="card-text"><small class="text-muted">Prueba.war</small></p>
+                <img class="card-img-top" src="img/prev.jpg" alt="Card image cap">
+
+                <div class="card-body">
+                    <button class="contextMenu text-muted removeButtonStyle styleButton">
+                        Maestria.docx
+                    </button>
                 </div>
+
             </div>
+
             <div class="card">
-                <img class="card-img-top" src="img/prev.jpg" alt="Card image cap">
-                <div class="card-body">
 
-                    <p class="card-text"><small class="text-muted">Prueba2.rar</small></p>
+                <img class="card-img-top" src="img/prev.jpg" alt="Card image cap">
+
+                <div class="card-body">
+                    <button class="contextMenu text-muted removeButtonStyle styleButton">
+                        Estilos.css
+                    </button>
                 </div>
+
             </div>
+
+            <div class="card">
+
+                <img class="card-img-top" src="img/prev.jpg" alt="Card image cap">
+
+                <div class="card-body">
+                    <button class="contextMenu text-muted removeButtonStyle styleButton">
+                        TOE.cpp
+                    </button>
+                </div>
+
+            </div>
+
         </div>
 
         <div class="card-group mt-5" style="width:100% !important">
@@ -219,9 +242,5 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
         crossorigin="anonymous"></script>
 <script src="http://cdn.jsdelivr.net/npm/alertifyjs@1.11.2/build/alertify.min.js"></script>
+<script src="js/contextMenu.js"></script>
 <script src="js/appFiles.js"></script>
-
-
-</body>
-
-</html></html>
