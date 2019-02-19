@@ -27,6 +27,14 @@
     color: #7ad092 !important;
 }
 
+.colorPrimaryBg{
+    background-color: #7ad092 !important;
+}
+
+.bRadius{
+    border-radius: 40px !important;
+}
+
 /* Nav */
 
 .logo{
