@@ -4,6 +4,6 @@ import mx.tec.HugBox.models.Users;
 
 public interface ISignUp {
 
-    public Users createUser(String mail, String password);
+     Users createUser(String mail, String password);
 
 }
