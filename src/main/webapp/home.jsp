@@ -199,7 +199,7 @@
                 <form>
                     <div class="form-group">
 
-                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                        <input type="file" class="form-control-file" id="content" accept="text/html,text/plain">
                     </div>
                 </form>
             </div>
