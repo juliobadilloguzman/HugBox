@@ -2,6 +2,7 @@ package mx.tec.HugBox.services;
 
 import mx.tec.HugBox.models.Documents;
 import mx.tec.HugBox.utils.Conexion;
+import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 
 import java.io.*;
@@ -12,11 +13,41 @@ public class DocumentsService implements IDocumentsService{
 
     @Override
     public Documents createDocument(int idUser, String fileName, File content, String type) {
+        try{
+            Connection conn = Conexion.getConnection();
+            String query = "CALL createDocument(?, ?, ?, ?)";
+            CallableStatement csmt = conn.prepareCall(query);
+            csmt.setInt(1, idUser);
+            csmt.setString(2,fileName);
+            csmt.setBinaryStream(3, FileToBlob(content,fileName));
+            csmt.setString(4,type);
+
+            Documents document = retrieveDocument(conn, csmt);
+            if (document != null) return document;
+
+        }catch(Exception ex){
+            System.out.println(this.getClass().toString()
+                    .concat(ex.getMessage()));
+        }
         return null;
     }
 
     @Override
     public Documents linkADocument(int idUser, String link) {
+        try{
+            Connection conn = Conexion.getConnection();
+            String query = "CALL addDocument(?,?)";
+            CallableStatement csmt = conn.prepareCall(query);
+            csmt.setInt(1, idUser);
+            csmt.setString(2, link);
+
+            Documents document = retrieveDocument(conn, csmt);
+            if (document != null) return document;
+
+        }catch(Exception ex){
+            System.out.println(this.getClass().toString()
+                    .concat(ex.getMessage()));
+        }
         return null;
     }
 
@@ -59,6 +90,39 @@ public class DocumentsService implements IDocumentsService{
         } catch (IOException e) {
             e.printStackTrace();
         }
+        return null;
+    }
+    InputStream FileToBlob(File input, String nombre){
+        try {
+            File file = new File("/Users/julioguzman/Documents", nombre);
+            FileUtils.copyFile(input,file);
+            InputStream targetStream = new FileInputStream(input);
+            return targetStream;
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    private Documents retrieveDocument(Connection conn, CallableStatement csmt) throws SQLException {
+        ResultSet rs = csmt.executeQuery();
+
+        if (rs.next()){
+            Documents document = new Documents();
+            document.setIdDocuments(rs.getInt("idDocuments"));
+            document.setLink(rs.getString("link"));
+            document.setFilename(rs.getString("filename"));
+            document.setType(rs.getString("type"));
+            document.setContent((BlobToFile(rs.getBinaryStream("content"), rs.getString("filename"))));
+            rs.close();
+            csmt.close();
+            conn.close();
+            return document;
+        }
+
+        rs.close();
+        csmt.close();
+        conn.close();
         return null;
     }
 }
