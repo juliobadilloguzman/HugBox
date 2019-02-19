@@ -21,6 +21,11 @@ public class SignUp implements ISignUp{
             ResultSet rs = ps.executeQuery();
             if(! rs.next()) {
 
+                Users user = new Users();
+
+                user.setEmail(mail);
+                user.setPassword(password);
+
                 String sql2 = "INSERT INTO users (email, password) VALUES (?, sha2(?,224))";
                 PreparedStatement ps2 = conn.prepareStatement(sql2);
                 ps2.setString(1, mail);
@@ -28,6 +33,8 @@ public class SignUp implements ISignUp{
                 ps2.execute();
 
                 ps2.close();
+
+                return user;
             }
             ps.close();
             rs.close();

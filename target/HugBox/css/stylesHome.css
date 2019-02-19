@@ -1,0 +1,75 @@
+.navbar{
+    height: 7vh;
+    border-bottom: 1px solid #afafaf;
+    background-color: #7ad092 !important;
+}
+
+.noPadding {
+    padding: 0 !important;
+    margin: 0 !important;
+ }
+
+ .b-right{
+     border-right: 1px solid #888888;
+ }
+
+.displayBlock{
+    display: block !important;
+}
+
+ /* Nav */
+
+ .logo{
+    max-height:100%; 
+    max-width:100%;
+ }
+
+ /* Titulo principal */
+
+ .containerTitle{
+     height: 9vh;
+     background-color: #f1f1f1;
+     border: 1px solid #888888;
+     border-radius: 10px;
+ }
+
+ .centerVertically{
+    display: flex !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    flex-direction: row !important;
+ }
+ 
+ .title{
+     font-size: 15px !important;
+ }
+
+ /* Informacion */
+
+ .containerInfo{
+    
+    height: 16vh;
+    background-color: #f1f1f1;
+    border: 1px solid #888888;
+    border-radius: 10px;
+
+ }
+
+ .titleInfo{
+     color: #61a774;
+ }
+
+ .topTitle{
+     font-weight: 700;
+ }
+
+ .bottomTitle{
+     font-size: 25px;
+ }
+
+ /* Table */
+
+ .theadTable{
+     background-color: #fbf8f9 !important;
+     border-radius: 5px !important;
+ }

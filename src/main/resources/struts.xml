@@ -11,6 +11,31 @@
 
     <package name="default" namespace="/" extends="struts-default">
 
+        <interceptors>
+
+            <!-- STACK DE INTERCEPTORES -->
+
+            <interceptor-stack name="mystack">
+
+                <interceptor-ref name="params"/>
+
+                <!-- Interceptor que creamos -->
+
+
+            </interceptor-stack>
+
+        </interceptors>
+
+        <action class="mx.tec.HugBox.actions.LoginAction" name="login">
+            <result name="success">home.jsp</result>
+            <result name="error">error.jsp</result>
+        </action>
+
+        <action class="mx.tec.HugBox.actions.SignUpAction" name="signUp">
+            <result name="success">index.jsp</result>
+            <result name="error">error.jsp</result>
+        </action>
+
     </package>
 
 </struts>

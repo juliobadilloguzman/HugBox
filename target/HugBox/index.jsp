@@ -38,17 +38,25 @@
                 <div class="form-items text-center">
                     <h3 class="text-center">¡Bienvenido de nuevo!</h3>
                     <p class="text-center">Nos da gusto que estes de vuelta</p>
+                    <!--<form action="login" method="POST">-->
+                        <input class="form-control" type="email" placeholder="Correo Electrónico" required id="email" name="email">
+                         <span class="text-warning mb-2" id="errorFormatEmail">Formato Incorrecto</span>
+                        <input class="form-control mt-2" type="password" placeholder="Contraseña" required id="password" name="password">
+                         <span class="text-warning mb-2" id="errorFormatPassword">Formato Incorrecto</span>
 
-                        <input class="form-control" type="email" placeholder="Correo Electrónico" required id="email">
-                        <!-- <span class="text-danger mb-2">Incorrecto</span> -->
-                        <input class="form-control" type="password" placeholder="Contraseña" required id="password">
-                        <!-- <span class="text-danger">Incorrecto</span> -->
+                        <div class="row mt-2 mb-1" id="errorIncorrectCredentials">
+                            <div class="col-12">
+                                <span class="text-center text-danger">Usuario o contraseña incorrectos</span>
+                            </div>
+                        </div>
 
                         <!-- BOTON -->
                         <div class="form-button">
-                            <button type="button" id="btn-login" class="ibtn">Ingresar</button>
+                            <button type="submit" id="btn-login" class="ibtn">Ingresar</button>
                         </div>
 
+
+                    <!--</form>-->
 
                     <div class="page-links mt-3">
                         <a href="registro.jsp">Crear nueva cuenta</a>
@@ -57,12 +65,7 @@
             </div>
         </div>
     </div>
-
-    <s:form action="modelo" method="POST">
-        <s:textfield name="nombre" label="Nombre"/>
-        <s:textfield name="edad" label="Edad"/>
-        <s:submit />
-    </s:form>
+    
 
 </div>
 
