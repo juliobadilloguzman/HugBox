@@ -8,6 +8,7 @@ public class Documents implements Serializable {
     private String filename;
     private File content;
     private String link;
+    private String type;
 
     public int getIdDocuments() {
         return idDocuments;
@@ -39,5 +40,13 @@ public class Documents implements Serializable {
 
     public void setContent(File content) {
         this.content = content;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 }
