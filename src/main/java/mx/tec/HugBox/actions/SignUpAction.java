@@ -17,7 +17,7 @@ public class SignUpAction extends ActionSupport implements ModelDriven<Users> {
 
 
         if(_signUpService.createUser(usuario.getEmail(), usuario.getPassword()) == null){
-            System.out.println("ENTRE");
+
             return ERROR;
         }
 

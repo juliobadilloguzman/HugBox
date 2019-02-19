@@ -41,13 +41,22 @@
         </div>
 
         <div class="col-2">
+            <div class="dropdown">
+                <button class=" text-white dropStyle btn-sm truncate btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                    julioxguzman@gmail.com
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Cerrar Sesión</a>
 
+                </div>
+            </div>
         </div>
 
     </nav>
 
 
-    <div class="container">
+    <div class="container mb-5">
 
         <!-- Title -->
         <div class="row containerTitle justify-content-between mt-5">
@@ -59,39 +68,134 @@
             </div>
         </div>
 
-        <!-- Info -->
-        <div class="row containerInfo mt-4">
-
-            <div class="col-4 text-center justify-content-center b-right">
-                <span class="d-block text-primary topTitle">4GB</span>
-                <span class="d-block bottomTitle text-secondary">USAGE</span>
+        <div class="row mt-5">
+            <div class="col-4">
+                <button type="button" class="buttonStyle btn" data-toggle="modal" data-target="#exampleModalCenter">
+                    <i class="fas fa-plus colorPrimary"></i> Cargar archivo
+                </button>
             </div>
-
-            <div class="col-4 text-center justify-content-center b-right">
-                <span class="d-block text-primary topTitle">192</span>
-                <span class="d-block bottomTitle text-secondary">FILES</span>
-            </div>
-
-            <div class="col-4 text-center justify-content-center">
-                <span class="d-block text-primary topTitle">82929</span>
-                <span class="d-block bottomTitle text-secondary">DOWNLOADS</span>
-            </div>
-
         </div>
+
 
         <!-- Archivos -->
-        <div class="row mt-4">
-            <div class="col-3 ">HOLA</div>
-            <div class="col-3"></div>
-            <div class="col-3"></div>
-            <div class="col-3"></div>
+        <div class="card-group mt-5" style="width:100% !important">
+            <div class="card">
+                <img class="card-img-top" src="img/prev.jpg" alt="Card image cap">
+                <div class="card-body">
+
+                    <p class="card-text"><small class="text-muted">Archivo1.rar</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="img/prev.jpg" alt="Card image cap">
+                <div class="card-body">
+
+                    <p class="card-text"><small class="text-muted">Maestria.docx</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="img/prev.jpg" alt="Card image cap">
+                <div class="card-body">
+
+                    <p class="card-text"><small class="text-muted">Prueba.war</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="img/prev.jpg" alt="Card image cap">
+                <div class="card-body">
+
+                    <p class="card-text"><small class="text-muted">Prueba2.rar</small></p>
+                </div>
+            </div>
         </div>
 
+        <div class="card-group mt-5" style="width:100% !important">
+            <div class="card">
+                <img class="card-img-top" src="img/prev.jpg" alt="Card image cap">
+                <div class="card-body">
+
+                    <p class="card-text"><small class="text-muted">Archivos.cpp</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="img/prev.jpg" alt="Card image cap">
+                <div class="card-body">
+
+                    <p class="card-text"><small class="text-muted">SYS.jjs</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="img/prev.jpg" alt="Card image cap">
+                <div class="card-body">
+
+                    <p class="card-text"><small class="text-muted">Prueba.cpp</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="img/prev.jpg" alt="Card image cap">
+                <div class="card-body">
+
+                    <p class="card-text"><small class="text-muted">Prueba2.cpp</small></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-group mt-5" style="width:100% !important">
+            <div class="card">
+                <img class="card-img-top" src="img/prev.jpg" alt="Card image cap">
+                <div class="card-body">
+
+                    <p class="card-text"><small class="text-muted">Archivos.cpp</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="img/prev.jpg" alt="Card image cap">
+                <div class="card-body">
+
+                    <p class="card-text"><small class="text-muted">SYS.jjs</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="img/prev.jpg" alt="Card image cap">
+                <div class="card-body">
+
+                    <p class="card-text"><small class="text-muted">Prueba.cpp</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="img/prev.jpg" alt="Card image cap">
+                <div class="card-body">
+
+                    <p class="card-text"><small class="text-muted">Prueba2.cpp</small></p>
+                </div>
+            </div>
+        </div>
 
 
     </div>
 
 
+</div>
+
+<!-- MODALES -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
 </div>
 
 

@@ -40,8 +40,11 @@
                     <p class="text-center">Únete al máximo gestor de archivos que hay actualmente</p>
 
                         <input class="form-control" type="email" placeholder="Correo Electrónico" required id="email">
+                        <span class="text-warning mb-2" id="errorFormatEmail">Formato Incorrecto</span>
                         <input class="form-control" type="password" placeholder="Contraseña" required id="password">
-                        <input class="form-control" type="password" placeholder="Confirmar Contraseña" required>
+                        <span class="text-warning mb-2" id="errorFormatPassword">Formato Incorrecto</span>
+
+
 
                         <!-- BOTON -->
                         <div class="form-button">
