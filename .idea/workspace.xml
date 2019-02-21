@@ -7,15 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="24ffe5a9-95fb-4cb3-9829-74671be4876e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mx/tec/HugBox/actions/FilesAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/tec/HugBox/actions/FilesAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/struts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/struts.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/js/appFiles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/appFiles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HugBox.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/HugBox.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HugBox/WEB-INF/classes/mx/tec/HugBox/services/DocumentsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HugBox/WEB-INF/classes/mx/tec/HugBox/services/DocumentsService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HugBox/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/HugBox/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mx/tec/HugBox/services/DocumentsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mx/tec/HugBox/services/DocumentsService.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -36,7 +28,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/home.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="236">
@@ -53,7 +45,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/mx/tec/HugBox/models/Documents.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="83">
+            <state relative-caret-position="67">
               <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -99,11 +91,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/js/appFiles.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="77" column="34" lean-forward="true" selection-start-line="77" selection-start-column="34" selection-end-line="77" selection-end-column="34" />
+            <state relative-caret-position="281">
+              <caret line="62" column="22" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -161,8 +153,8 @@
         <option value="$PROJECT_DIR$/src/main/java/mx/tec/HugBox/services/DocumentsService.java" />
         <option value="$PROJECT_DIR$/src/main/java/mx/tec/HugBox/actions/FilesAction.java" />
         <option value="$PROJECT_DIR$/src/main/resources/struts.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/appFiles.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/home.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/appFiles.js" />
       </list>
     </option>
   </component>
@@ -277,7 +269,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550726073464" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550726156583" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -411,7 +403,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9495000" />
+    <option name="totallyTimeSpent" value="9636000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-38" y="23" width="1400" height="788" extended-state="0" />
@@ -550,6 +542,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="151" column="58" selection-start-line="151" selection-start-column="58" selection-end-line="151" selection-end-column="58" />
+          <folding>
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#7619#7626#1#HTML" expanded="true" />
+            <element signature="e#8783#8790#1#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/mx/tec/HugBox/actions/FilesAction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -572,16 +576,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/appFiles.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="77" column="34" lean-forward="true" selection-start-line="77" selection-start-column="34" selection-end-line="77" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/mx/tec/HugBox/models/Documents.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
+        <state relative-caret-position="67">
           <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -609,15 +606,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/home.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/appFiles.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="151" column="58" selection-start-line="151" selection-start-column="58" selection-end-line="151" selection-end-column="58" />
-          <folding>
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#7619#7626#1#HTML" expanded="true" />
-            <element signature="e#8783#8790#1#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="281">
+          <caret line="62" column="22" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
         </state>
       </provider>
     </entry>

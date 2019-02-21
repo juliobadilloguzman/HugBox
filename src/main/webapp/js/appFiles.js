@@ -58,6 +58,10 @@ $(document).ready(function () {
                 type=".pdf"
                 break;
 
+            case "application/vnd.openxmlformats-officedocument.wordprocessingml.document":
+                type=".docx"
+                break;
+
         }
 
         $('#type').val(type);
