@@ -41,6 +41,12 @@
 
         </action>
 
+        <action class="mx.tec.HugBox.actions.FilesAction" name="fileUpload" method="fileUpload">
+            <result name="success">home.jsp</result>
+            <result name="input">home.jsp</result>
+            <result name="error">error.jsp</result>
+        </action>
+
     </package>
 
 </struts>

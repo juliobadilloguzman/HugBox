@@ -99,7 +99,16 @@
                     <div class="col-3 mt-3">
                         <div class="card">
 
-                            <img class="card-img-top" src="img/prev.jpg" alt="Card image cap">
+
+
+                            <s:if test="%{type=='.docx'}">
+                                <img class="card-img-top" src="img/types/docx.jpg" alt="Card image cap">
+                            </s:if>
+                            <s:else>
+                                <img class="card-img-top" src="img/types/default.jpg" alt="Card image cap">
+                            </s:else>
+
+
 
                             <div class="card-body">
                                 <button data-target=".shareModal" class="contextMenu text-muted removeButtonStyle styleButton getId" data-id='<s:property value="%{idDocuments}" />'>
@@ -135,16 +144,19 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form>
+                <form id="file">
                     <div class="form-group">
-
-                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                        <form>
+                            <input type="file" class="form-control-file" name="content" id="archivo">
+                            <input type="hidden" id="fileName"/>
+                            <input type="hidden" id="type"/>
+                        </form>
                     </div>
                 </form>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary bRadius" data-dismiss="modal">Cerrar</button>
-                <button type="button" class="btn colorPrimaryBg text-white bRadius">Subir</button>
+                <button type="button" class="btn colorPrimaryBg text-white bRadius" id="btn-fileUpload">Subir</button>
             </div>
         </div>
     </div>
