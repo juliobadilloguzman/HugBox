@@ -30,39 +30,13 @@ $(document).ready(function () {
     $('#archivo').change(function(e){
 
         var fileName = e.target.files[0].name;
+        var fileName2 = e.target.files[0].name;
+
         fileName = fileName.replace(/\.[^/.]+$/, "");
 
         $('#fileName').val(fileName);
 
-        var type;
-
-        switch (document.getElementById('archivo').files[0].type) {
-
-            case "application/zip":
-                type=".zip";
-                break;
-
-            case "text/plain":
-                type=".txt";
-                break;
-
-            case "image/png":
-                type=".png"
-                break;
-
-            case "image/jpeg":
-                type=".jpg"
-                break;
-
-            case "application/pdf":
-                type=".pdf"
-                break;
-
-            case "application/vnd.openxmlformats-officedocument.wordprocessingml.document":
-                type=".docx"
-                break;
-
-        }
+        var type = "."+fileName2.split('.').pop().toLocaleLowerCase();
 
         $('#type').val(type);
 
@@ -93,7 +67,36 @@ $(document).ready(function () {
             processData: false,
             success: function(response){
 
-                alert(response);
+                if(response == "error")
+                    swal ( "Oops" ,  "No se pudo subir el archivo, intente de nuevo!" ,  "error" );
+                else{
+
+                    swal({
+                        title: "Buen Trabajo!",
+                        text: "Archivo subido satisfactoriamente",
+                        icon: "success",
+                        buttons: {
+                            catch: {
+                                text: "Ok!",
+                                value: "ok",
+                            }
+                        },
+                    })
+                        .then((value) => {
+
+                        switch (value) {
+
+
+                        case "ok":
+                            window.location.replace("files");
+                            break;
+
+
+                        }
+                    });
+
+                }
+
 
             },
             error: function(){
@@ -104,7 +107,7 @@ $(document).ready(function () {
 
     });
 
-    //mensaje success
-    alertify.success('Success message');
+
+
 
 });

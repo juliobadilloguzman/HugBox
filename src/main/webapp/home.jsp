@@ -67,7 +67,7 @@
     </nav>
 
 
-    <div class="container">
+    <div class="container mb-4">
 
         <!-- Title -->
         <div class="row containerTitle justify-content-between mt-5">
@@ -104,8 +104,41 @@
                             <s:if test="%{type=='.docx'}">
                                 <img class="card-img-top" src="img/types/docx.jpg" alt="Card image cap">
                             </s:if>
-                            <s:else>
+                            <s:elseif test="%{type=='.zip'}">
+                                <img class="card-img-top" src="img/types/zip.jpg" alt="Card image cap">
+                            </s:elseif>
+                            <s:elseif test="%{type=='.txt'}">
                                 <img class="card-img-top" src="img/types/default.jpg" alt="Card image cap">
+                            </s:elseif>
+                            <s:elseif test="%{type=='.html'}">
+                                <img class="card-img-top" src="img/types/html.jpg" alt="Card image cap">
+                            </s:elseif>
+                            <s:elseif test="%{type=='.pdf'}">
+                                <img class="card-img-top" src="img/types/pdf.jpg" alt="Card image cap">
+                            </s:elseif>
+                            <s:elseif test="%{type=='.jpg'}">
+                                <img class="card-img-top" src="img/types/image.jpg" alt="Card image cap">
+                            </s:elseif>
+                            <s:elseif test="%{type=='.jpeg'}">
+                                <img class="card-img-top" src="img/types/image.jpg" alt="Card image cap">
+                            </s:elseif>
+                            <s:elseif test="%{type=='.gif'}">
+                                <img class="card-img-top" src="img/types/image.jpg" alt="Card image cap">
+                            </s:elseif>
+                            <s:elseif test="%{type=='.png'}">
+                                <img class="card-img-top" src="img/types/image.jpg" alt="Card image cap">
+                            </s:elseif>
+                            <s:elseif test="%{type=='.rar'}">
+                                <img class="card-img-top" src="img/types/image.jpg" alt="Card image cap">
+                            </s:elseif>
+                            <s:elseif test="%{type=='.js'}">
+                                <img class="card-img-top" src="img/types/js.jpg" alt="Card image cap">
+                            </s:elseif>
+                            <s:elseif test="%{type=='.svg'}">
+                                <img class="card-img-top" src="img/types/svg.jpg" alt="Card image cap">
+                            </s:elseif>
+                            <s:else>
+                                <img class="card-img-top" src="img/types/file.jpg" alt="Card image cap">
                             </s:else>
 
 
@@ -198,5 +231,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
         crossorigin="anonymous"></script>
 <script src="http://cdn.jsdelivr.net/npm/alertifyjs@1.11.2/build/alertify.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="js/contextMenu.js"></script>
 <script src="js/appFiles.js"></script>
