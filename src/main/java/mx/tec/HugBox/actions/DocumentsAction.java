@@ -14,15 +14,6 @@ public class DocumentsAction extends ActionSupport implements ModelDriven<Docume
     private FileInputStream fileInputStream;
     private String type;
 
-    public String getFinalFileName() {
-        return finalFileName;
-    }
-
-    public void setFinalFileName(String finalFileName) {
-        this.finalFileName = finalFileName+type;
-    }
-
-    private String finalFileName;
 
     public String getType() {
         return type;
@@ -76,6 +67,8 @@ public class DocumentsAction extends ActionSupport implements ModelDriven<Docume
         filename = document.getFilename();
         System.out.println("El file es: + " + document.getFilename());
         System.out.println("El tipo es: " +  document.getType());
+
+        System.out.println("Concatenado es: " + document.getFilename().concat(document.getType()));
 
         fileInputStream = new FileInputStream(document.getContent());
         System.out.println("El input stream es: " +  this.getFileInputStream());
