@@ -12,6 +12,25 @@ public class DocumentsAction extends ActionSupport implements ModelDriven<Docume
     private String link;
     private String filename;
     private FileInputStream fileInputStream;
+    private String type;
+
+    public String getFinalFileName() {
+        return finalFileName;
+    }
+
+    public void setFinalFileName(String finalFileName) {
+        this.finalFileName = finalFileName+type;
+    }
+
+    private String finalFileName;
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
 
     public String getLink() {
         return link;
@@ -47,6 +66,7 @@ public class DocumentsAction extends ActionSupport implements ModelDriven<Docume
 
     @Override
     public String execute() throws Exception {
+        System.out.println("El li¡nk es:");
         System.out.println(link);
         DocumentsService _documentService = new DocumentsService();
         document = _documentService.linkADocument(link);
@@ -54,6 +74,11 @@ public class DocumentsAction extends ActionSupport implements ModelDriven<Docume
             return ERROR;
         }
         filename = document.getFilename();
+        System.out.println("El file es: + " + document.getFilename());
+        System.out.println("El tipo es: " +  document.getType());
+
+        fileInputStream = new FileInputStream(document.getContent());
+        System.out.println("El input stream es: " +  this.getFileInputStream());
         return SUCCESS;
         //fileInputStream = new FileInputStream(document.getContent());
         //return DOWNLOAD;

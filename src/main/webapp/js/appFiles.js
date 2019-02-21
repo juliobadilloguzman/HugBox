@@ -11,13 +11,21 @@ $(document).ready(function () {
         img: 'img/download-solid.svg',
         title: 'create button',
         fun: function () {
-            alert("Descargando: " +  $('#idArchivo').val());
+
+
+
+
+
+
+
         }
     }, {
         name: 'Compartir',
         img: 'img/share-solid.svg',
         title: 'share button',
         fun: function () {
+
+            $('#sharedLink').val("http://localhost:8080/HugBox/downloadLink?link="+$('#idArchivo').val());
             $('.shareModal').modal('toggle');
         }
     }];

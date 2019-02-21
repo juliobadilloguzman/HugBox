@@ -144,7 +144,7 @@
 
 
                             <div class="card-body">
-                                <button data-target=".shareModal" class="contextMenu text-muted removeButtonStyle styleButton getId" data-id='<s:property value="%{idDocuments}" />'>
+                                <button data-target=".shareModal" class="contextMenu text-muted removeButtonStyle styleButton getId" data-id='<s:property value="%{link}" />'>
                                     <s:property value="%{filename}" /><s:property value="%{type}" />
                                 </button>
                             </div>
@@ -209,7 +209,7 @@
             <div class="modal-body">
                 <div class="row justify-content-center">
                     <div class="col-10">
-                        <input type="text" class="form-control" value="https://docs.google.com/document/d/17xONRHdXRH-91-rUPfZncdyiGaEEgRC-XrkAQDl51Ic/edit?usp=sharing">
+                        <input type="text" class="form-control" id="sharedLink">
                     </div>
                     <div class="col-2">
                         <button class="btn btn-primary bRadius">Copiar</button>

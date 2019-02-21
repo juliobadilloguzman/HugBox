@@ -18,7 +18,7 @@
 </head>
 <body>
 
-HOLA
+<h1>Par&aacute;metro: <s:property value="#parameters['param']" /></h1>
 
 </body>
 </html>

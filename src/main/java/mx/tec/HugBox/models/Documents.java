@@ -10,6 +10,7 @@ public class Documents implements Serializable {
     private String link;
     private String type;
 
+
     public int getIdDocuments() {
         return idDocuments;
     }

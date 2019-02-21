@@ -36,7 +36,7 @@ public class DocumentsService implements IDocumentsService{
     public Documents linkADocument (String link) {
         try{
             Connection conn = Conexion.getConnection();
-            String query = "CALL linkProcedure(?)";
+            String query = "CALL linkDocument(?)";
             CallableStatement csmt = conn.prepareCall(query);
             csmt.setString(1, link);
 
@@ -81,8 +81,8 @@ public class DocumentsService implements IDocumentsService{
     }
     File BlobToFile(InputStream input, String nombre){
         try {
-           // File file = new File("/Users/julioguzman/Documents", nombre);
-            File file = new File("D:\\imagenes", nombre);
+            File file = new File("/Users/julioguzman/Documents", nombre);
+            //File file = new File("D:\\imagenes", nombre);
             OutputStream outputStream = new FileOutputStream(file);
             IOUtils.copy(input, outputStream);
             outputStream.close();
@@ -94,8 +94,8 @@ public class DocumentsService implements IDocumentsService{
     }
     InputStream FileToBlob(File input, String nombre){
         try {
-           // File file = new File("/Users/julioguzman/Documents", nombre);
-            File file = new File("/D:\\imagenes", nombre);
+            File file = new File("/Users/julioguzman/Documents", nombre);
+            //File file = new File("/D:\\imagenes", nombre);
             FileUtils.copyFile(input,file);
             InputStream targetStream = new FileInputStream(input);
             return targetStream;
