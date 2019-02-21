@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 public interface IDocumentsService {
     Documents createDocument(int idUser, String fileName, File content, String type);
-    Documents linkADocument(int idUser, String link);
+    Documents linkADocument(String link);
     ArrayList<Documents> showDocuments(int idUser );
 
 }

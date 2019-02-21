@@ -47,6 +47,23 @@
             <result name="error">error.jsp</result>
         </action>
 
+        <!-- archivo url -->
+        <action  class="mx.tec.HugBox.actions.DocumentsAction" name="downloadLink">
+            <result name="success">
+                <param name="link">String</param>
+            </result>
+            <!--
+            <result name="download" type="stream">
+                <param name="link">String</param>
+                <param name="contentType">application/octet-stream</param>
+                <param name="inputName">fileInputStream</param>
+                <param name="contentDisposition">attachment;filename=%{filename}</param>
+                <param name="bufferSize">4096</param>
+            </result>
+            -->
+            <result name="error">error.jsp</result>
+        </action>
+
     </package>
 
 </struts>

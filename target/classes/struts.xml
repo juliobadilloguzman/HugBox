@@ -47,6 +47,14 @@
             <result name="error">error.jsp</result>
         </action>
 
+        <!-- archivo url -->
+        <action  class="mx.tec.HugBox.actions.DocumentsAction" name="downloadLink">
+            <result name="success">
+                <param name="link">String</param>
+            </result>
+            <result name="error">error.jsp</result>
+        </action>
+
     </package>
 
 </struts>

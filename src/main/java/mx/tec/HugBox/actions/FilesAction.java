@@ -7,6 +7,7 @@ import com.opensymphony.xwork2.util.ValueStack;
 import mx.tec.HugBox.models.Documents;
 import mx.tec.HugBox.models.Users;
 import mx.tec.HugBox.services.DocumentsService;
+import org.apache.logging.log4j.message.StringFormattedMessage;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -60,7 +61,6 @@ public class FilesAction extends ActionSupport implements ModelDriven<Documents>
 
         return SUCCESS;
     }
-
     @Override
     public Documents getModel() {
         return documento;
