@@ -4,6 +4,8 @@ import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
 import mx.tec.HugBox.models.Documents;
 import mx.tec.HugBox.services.DocumentsService;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.apache.struts2.interceptor.SessionAware;
 
 import java.io.FileInputStream;
@@ -17,6 +19,7 @@ public class DocumentsAction extends ActionSupport implements SessionAware, Mode
     private String type;
     Map<String, Object> session;
 
+    private static Logger logger= LogManager.getLogger(DocumentsAction.class.getName());
 
     public String getType() {
         return type;
@@ -60,10 +63,12 @@ public class DocumentsAction extends ActionSupport implements SessionAware, Mode
 
     @Override
     public String execute() throws Exception {
+
         System.out.println("El li¡nk es:");
         System.out.println(link);
         DocumentsService _documentService = new DocumentsService();
         document = _documentService.linkADocument(link);
+        logger.info(document);
         if(document== null){
             return ERROR;
         }
@@ -74,7 +79,8 @@ public class DocumentsAction extends ActionSupport implements SessionAware, Mode
         System.out.println("Concatenado es: " + document.getFilename().concat(document.getType()));
 
         fileInputStream = new FileInputStream(document.getContent());
-        System.out.println("El input stream es: " +  this.getFileInputStream());
+        /*System.out.println("El input stream es: " +  this.getFileInputStream());*/
+        logger.info("El input stream es: " + fileInputStream );
         return SUCCESS;
         //fileInputStream = new FileInputStream(document.getContent());
         //return DOWNLOAD;

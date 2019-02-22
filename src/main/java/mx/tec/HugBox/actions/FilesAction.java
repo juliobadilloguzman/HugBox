@@ -7,6 +7,8 @@ import com.opensymphony.xwork2.util.ValueStack;
 import mx.tec.HugBox.models.Documents;
 import mx.tec.HugBox.models.Users;
 import mx.tec.HugBox.services.DocumentsService;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.message.StringFormattedMessage;
 import org.apache.struts2.interceptor.SessionAware;
 
@@ -19,6 +21,7 @@ import java.util.Map;
 public class FilesAction extends ActionSupport implements SessionAware, ModelDriven<Documents> {
     Map<String, Object> session;
     Documents documento = new Documents();
+    private static Logger logger = LogManager.getLogger(FilesAction.class.getName());
 
     private ArrayList<Documents> listaDocumentos;
 
@@ -41,6 +44,7 @@ public class FilesAction extends ActionSupport implements SessionAware, ModelDri
         DocumentsService _documentService = new DocumentsService();
 
         listaDocumentos = _documentService.showDocuments((Integer) session.get("UserId"));
+        logger.info(listaDocumentos);
 
         System.out.println("lista es: " + listaDocumentos);
 

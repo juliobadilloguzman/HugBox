@@ -6,7 +6,8 @@ import java.sql.DriverManager;
 public class Conexion {
 
     public static Connection getConnection(){
-        String cadena = "jdbc:mysql://localhost:8889/ladw_db01?user=root&password=root&useSSL=false";
+        String cadena = "jdbc:mysql://localhost/ladw_db01?user=root&password=root&useSSL=false";
+        /*:8889*/
         Connection connection = null;
 
         try{
