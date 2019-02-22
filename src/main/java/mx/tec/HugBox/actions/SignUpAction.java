@@ -35,7 +35,7 @@ public class SignUpAction extends ActionSupport implements SessionAware, ModelDr
     }
 
     @Override
-    public void setSession(Map<String, Object> map) {
+    public void setSession(Map<String, Object> session) {
         this.session = session;
     }
 }

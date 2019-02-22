@@ -78,7 +78,7 @@ public class FilesAction extends ActionSupport implements SessionAware, ModelDri
     }
 
     @Override
-    public void setSession(Map<String, Object> map) {
+    public void setSession(Map<String, Object> session) {
         this.session = session;
     }
 }

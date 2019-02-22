@@ -90,7 +90,7 @@ public class DocumentsAction extends ActionSupport implements SessionAware, Mode
     }
 
     @Override
-    public void setSession(Map<String, Object> map) {
+    public void setSession(Map<String, Object> session) {
         this.session = session;
     }
 }
