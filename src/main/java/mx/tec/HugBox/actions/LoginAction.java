@@ -24,12 +24,7 @@ public class LoginAction extends ActionSupport implements SessionAware, ModelDri
 
     @Override
     public String execute() throws Exception {
-        int myId=0;
-        if (session.containsKey("UserId")){
 
-            myId=(Integer)session.get("UserId");
-            return SUCCESS;
-        }
         //Instancia servicio
         LoginService _loginService = new LoginService();
 
@@ -37,6 +32,7 @@ public class LoginAction extends ActionSupport implements SessionAware, ModelDri
         if(_loginService.verifyUser(usuario.getEmail(), usuario.getPassword()) == null){
             return ERROR;
         }
+
             session.put("UserId", (Integer)usuario.getIdUsers());
         return SUCCESS;
     }
