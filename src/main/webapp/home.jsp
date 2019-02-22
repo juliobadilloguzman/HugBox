@@ -15,7 +15,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>HugBox</title>
 
     <link rel="stylesheet" href="css/fontawesome-all.min.css">
     <link rel="stylesheet" href="css/stylesHome.css">
@@ -55,10 +55,10 @@
             <div class="dropdown">
                 <button class=" text-white dropStyle btn-sm truncate btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">
-                    julioxguzman@gmail.com
+
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Cerrar Sesión</a>
+                    <a class="dropdown-item" href="index.jsp">Cerrar Sesión</a>
 
                 </div>
             </div>
@@ -212,7 +212,7 @@
                         <input type="text" class="form-control" id="sharedLink">
                     </div>
                     <div class="col-2">
-                        <button class="btn btn-primary bRadius">Copiar</button>
+                        <button class="btn btn-primary bRadius btnCopy">Copiar</button>
                     </div>
                 </div>
             </div>
