@@ -8,14 +8,16 @@ import mx.tec.HugBox.models.Documents;
 import mx.tec.HugBox.models.Users;
 import mx.tec.HugBox.services.DocumentsService;
 import org.apache.logging.log4j.message.StringFormattedMessage;
+import org.apache.struts2.interceptor.SessionAware;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 
-public class FilesAction extends ActionSupport implements ModelDriven<Documents> {
-
+public class FilesAction extends ActionSupport implements SessionAware, ModelDriven<Documents> {
+    Map<String, Object> session;
     Documents documento = new Documents();
 
     private ArrayList<Documents> listaDocumentos;
@@ -32,12 +34,17 @@ public class FilesAction extends ActionSupport implements ModelDriven<Documents>
 
     @Override
     public String execute() throws Exception {
+        int myId=0;
+        if (session.containsKey("UserId")){
+
+            myId=(Integer)session.get("UserId");
+        }
 
         ValueStack stack = ActionContext.getContext().getValueStack();
 
         DocumentsService _documentService = new DocumentsService();
 
-        listaDocumentos = _documentService.showDocuments(1);
+        listaDocumentos = _documentService.showDocuments(myId);
 
         System.out.println("lista es: " + listaDocumentos);
 
@@ -45,7 +52,11 @@ public class FilesAction extends ActionSupport implements ModelDriven<Documents>
     }
 
     public String fileUpload(){
+        int myId=0;
+        if (session.containsKey("UserId")){
 
+            myId=(Integer)session.get("UserId");
+        }
         DocumentsService _documentService = new DocumentsService();
 
         System.out.println("***DATOS***");
@@ -54,7 +65,7 @@ public class FilesAction extends ActionSupport implements ModelDriven<Documents>
         System.out.println("Type: " + documento.getType());
 
 
-        if( _documentService.createDocument(1, documento.getFilename(), documento.getContent(), documento.getType()) ==null){
+        if( _documentService.createDocument(myId, documento.getFilename(), documento.getContent(), documento.getType()) ==null){
             return ERROR;
         }
 
@@ -66,4 +77,8 @@ public class FilesAction extends ActionSupport implements ModelDriven<Documents>
         return documento;
     }
 
+    @Override
+    public void setSession(Map<String, Object> map) {
+        this.session = session;
+    }
 }

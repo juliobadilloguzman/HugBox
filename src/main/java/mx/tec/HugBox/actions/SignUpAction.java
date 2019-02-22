@@ -4,10 +4,13 @@ import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
 import mx.tec.HugBox.models.Users;
 import mx.tec.HugBox.services.SignUp;
+import org.apache.struts2.interceptor.SessionAware;
+
+import java.util.Map;
 
 
-public class SignUpAction extends ActionSupport implements ModelDriven<Users> {
-
+public class SignUpAction extends ActionSupport implements SessionAware, ModelDriven<Users> {
+    Map<String, Object> session;
     Users usuario = new Users();
 
     @Override
@@ -31,4 +34,8 @@ public class SignUpAction extends ActionSupport implements ModelDriven<Users> {
         return usuario;
     }
 
+    @Override
+    public void setSession(Map<String, Object> map) {
+        this.session = session;
+    }
 }

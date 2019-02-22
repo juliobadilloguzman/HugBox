@@ -4,15 +4,18 @@ import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
 import mx.tec.HugBox.models.Documents;
 import mx.tec.HugBox.services.DocumentsService;
+import org.apache.struts2.interceptor.SessionAware;
 
 import java.io.FileInputStream;
+import java.util.Map;
 
-public class DocumentsAction extends ActionSupport implements ModelDriven<Documents> {
+public class DocumentsAction extends ActionSupport implements SessionAware, ModelDriven<Documents> {
     private Documents document;
     private String link;
     private String filename;
     private FileInputStream fileInputStream;
     private String type;
+    Map<String, Object> session;
 
 
     public String getType() {
@@ -84,5 +87,10 @@ public class DocumentsAction extends ActionSupport implements ModelDriven<Docume
     @Override
     public Documents getModel() {
         return null;
+    }
+
+    @Override
+    public void setSession(Map<String, Object> map) {
+        this.session = session;
     }
 }

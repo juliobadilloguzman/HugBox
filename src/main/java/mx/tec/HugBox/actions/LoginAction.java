@@ -11,17 +11,25 @@ import org.apache.struts2.convention.annotation.Action;
 import org.apache.struts2.convention.annotation.InterceptorRef;
 import org.apache.struts2.convention.annotation.ParentPackage;
 import org.apache.struts2.convention.annotation.Result;
+import org.apache.struts2.interceptor.SessionAware;
+
 import javax.servlet.http.HttpServletResponse;
 import java.io.PrintWriter;
+import java.util.Map;
 
 
-public class LoginAction extends ActionSupport implements ModelDriven<Users> {
-
+public class LoginAction extends ActionSupport implements SessionAware, ModelDriven<Users> {
+    Map<String, Object> session;
     Users usuario = new Users();
 
     @Override
     public String execute() throws Exception {
+        int myId=0;
+        if (session.containsKey("UserId")){
 
+            myId=(Integer)session.get("UserId");
+            return SUCCESS;
+        }
         //Instancia servicio
         LoginService _loginService = new LoginService();
 
@@ -29,7 +37,7 @@ public class LoginAction extends ActionSupport implements ModelDriven<Users> {
         if(_loginService.verifyUser(usuario.getEmail(), usuario.getPassword()) == null){
             return ERROR;
         }
-
+            session.put("UserId", (Integer)usuario.getIdUsers());
         return SUCCESS;
     }
 
@@ -39,4 +47,8 @@ public class LoginAction extends ActionSupport implements ModelDriven<Users> {
     }
 
 
+    @Override
+    public void setSession(Map<String, Object> map) {
+        this.session = session;
+    }
 }
