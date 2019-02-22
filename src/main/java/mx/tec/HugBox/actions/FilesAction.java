@@ -34,17 +34,13 @@ public class FilesAction extends ActionSupport implements SessionAware, ModelDri
 
     @Override
     public String execute() throws Exception {
-        int myId=0;
-        if (session.containsKey("UserId")){
 
-            myId=(Integer)session.get("UserId");
-        }
 
         ValueStack stack = ActionContext.getContext().getValueStack();
 
         DocumentsService _documentService = new DocumentsService();
 
-        listaDocumentos = _documentService.showDocuments(myId);
+        listaDocumentos = _documentService.showDocuments((Integer) session.get("UserId"));
 
         System.out.println("lista es: " + listaDocumentos);
 
@@ -52,11 +48,7 @@ public class FilesAction extends ActionSupport implements SessionAware, ModelDri
     }
 
     public String fileUpload(){
-        int myId=0;
-        if (session.containsKey("UserId")){
 
-            myId=(Integer)session.get("UserId");
-        }
         DocumentsService _documentService = new DocumentsService();
 
         System.out.println("***DATOS***");
@@ -65,13 +57,14 @@ public class FilesAction extends ActionSupport implements SessionAware, ModelDri
         System.out.println("Type: " + documento.getType());
 
 
-        if( _documentService.createDocument(myId, documento.getFilename(), documento.getContent(), documento.getType()) ==null){
+        if( _documentService.createDocument((Integer) session.get("UserId"), documento.getFilename(), documento.getContent(), documento.getType()) ==null){
             return ERROR;
         }
 
 
         return SUCCESS;
     }
+
     @Override
     public Documents getModel() {
         return documento;
@@ -81,4 +74,5 @@ public class FilesAction extends ActionSupport implements SessionAware, ModelDri
     public void setSession(Map<String, Object> session) {
         this.session = session;
     }
+
 }
