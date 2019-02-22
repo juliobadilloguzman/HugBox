@@ -38,4 +38,31 @@ public class LoginService implements ILoginService {
         }
         return null;
     }
+
+    @Override
+    public int getIdByEmail(String email) {
+        try {
+            Connection connection = Conexion.getConnection();
+            String query = "SELECT idUsers FROM users WHERE email=? ";
+            PreparedStatement psmt = connection.prepareStatement(query);
+            psmt.setString(1, email);
+            ResultSet rs = psmt.executeQuery();
+
+            //Enters if the result set is not empty
+            if (rs.next()){
+                Users user = new Users();
+                user.setIdUsers(rs.getInt("idUsers"));
+                rs.close();
+                psmt.close();
+                connection.close();
+                return user.getIdUsers();
+            }
+            rs.close();
+            psmt.close();
+            connection.close();
+        } catch (SQLException ex){
+            System.out.println(ex.getMessage());
+        }
+        return 0;
+    }
 }
