@@ -31,6 +31,11 @@ public class LoginAction extends ActionSupport implements SessionAware, ModelDri
         //Instancia servicio
         LoginService _loginService = new LoginService();
 
+
+
+        int idUser = _loginService.getIdByEmail(usuario.getEmail());
+        System.out.println("EL ID DEL USUARIO ES: " + idUser);
+
         //Verifica que el usuario no sea nulo, en caso de serlo, manda error
         if(_loginService.verifyUser(usuario.getEmail(), usuario.getPassword()) == null){
             return ERROR;
@@ -38,7 +43,9 @@ public class LoginAction extends ActionSupport implements SessionAware, ModelDri
         logger.info(usuario);
         logger.info(_loginService);
 
+
         session.put("UserId", (Integer)usuario.getIdUsers());
+
         return SUCCESS;
     }
 

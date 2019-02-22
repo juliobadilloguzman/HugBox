@@ -12,6 +12,7 @@ import java.io.FileInputStream;
 import java.util.Map;
 
 public class DocumentsAction extends ActionSupport implements SessionAware, ModelDriven<Documents> {
+
     private Documents document;
     private String link;
     private String filename;
@@ -66,21 +67,28 @@ public class DocumentsAction extends ActionSupport implements SessionAware, Mode
 
         System.out.println("El li¡nk es:");
         System.out.println(link);
+
         DocumentsService _documentService = new DocumentsService();
         document = _documentService.linkADocument(link);
+
         logger.info(document);
+
         if(document== null){
             return ERROR;
         }
-        filename = document.getFilename();
+
+        filename = document.getFilename().concat(document.getType());
+
         System.out.println("El file es: + " + document.getFilename());
         System.out.println("El tipo es: " +  document.getType());
 
         System.out.println("Concatenado es: " + document.getFilename().concat(document.getType()));
 
         fileInputStream = new FileInputStream(document.getContent());
+
         /*System.out.println("El input stream es: " +  this.getFileInputStream());*/
         logger.info("El input stream es: " + fileInputStream );
+
         return SUCCESS;
         //fileInputStream = new FileInputStream(document.getContent());
         //return DOWNLOAD;
