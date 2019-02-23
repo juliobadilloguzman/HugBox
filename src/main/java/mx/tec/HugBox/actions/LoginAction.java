@@ -6,6 +6,8 @@ import com.opensymphony.xwork2.ModelDriven;
 import com.opensymphony.xwork2.util.ValueStack;
 import mx.tec.HugBox.models.Users;
 import mx.tec.HugBox.services.LoginService;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.apache.struts2.ServletActionContext;
 import org.apache.struts2.convention.annotation.Action;
 import org.apache.struts2.convention.annotation.InterceptorRef;
@@ -13,32 +15,34 @@ import org.apache.struts2.convention.annotation.ParentPackage;
 import org.apache.struts2.convention.annotation.Result;
 import org.apache.struts2.interceptor.SessionAware;
 
+import javax.servlet.Servlet;
 import javax.servlet.http.HttpServletResponse;
 import java.io.PrintWriter;
 import java.util.Map;
 
 
 public class LoginAction extends ActionSupport implements SessionAware, ModelDriven<Users> {
+
     Map<String, Object> session;
     Users usuario = new Users();
+
+    private static Logger logger = LogManager.getLogger(Servlet.class.getName());
 
     @Override
     public String execute() throws Exception {
 
-        //Instancia servicio
+
         LoginService _loginService = new LoginService();
 
-
-
         int idUser = _loginService.getIdByEmail(usuario.getEmail());
-        System.out.println("EL ID DEL USUARIO ES: " + idUser);
 
-        //Verifica que el usuario no sea nulo, en caso de serlo, manda error
+        logger.debug("Inicio sesion el usuario con email: "+ usuario.getEmail());
+
         if(_loginService.verifyUser(usuario.getEmail(), usuario.getPassword()) == null){
+            logger.debug("No se pudo iniciar sesion del usuario: " + usuario.getEmail());
             return ERROR;
         }
-
-            session.put("UserId", idUser);
+        session.put("UserId", idUser);
         return SUCCESS;
     }
 

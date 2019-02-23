@@ -7,8 +7,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="24ffe5a9-95fb-4cb3-9829-74671be4876e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/appFiles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/appFiles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/tec/HugBox/actions/DocumentsAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/tec/HugBox/actions/DocumentsAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/tec/HugBox/actions/FilesAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/tec/HugBox/actions/FilesAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/tec/HugBox/actions/LoginAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/tec/HugBox/actions/LoginAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/tec/HugBox/actions/SignUpAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/tec/HugBox/actions/SignUpAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/tec/HugBox/utils/Conexion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/tec/HugBox/utils/Conexion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HugBox.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/HugBox.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HugBox/WEB-INF/classes/mx/tec/HugBox/actions/DocumentsAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HugBox/WEB-INF/classes/mx/tec/HugBox/actions/DocumentsAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HugBox/WEB-INF/classes/mx/tec/HugBox/actions/FilesAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HugBox/WEB-INF/classes/mx/tec/HugBox/actions/FilesAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HugBox/WEB-INF/classes/mx/tec/HugBox/actions/LoginAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HugBox/WEB-INF/classes/mx/tec/HugBox/actions/LoginAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HugBox/WEB-INF/classes/mx/tec/HugBox/actions/SignUpAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HugBox/WEB-INF/classes/mx/tec/HugBox/actions/SignUpAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HugBox/WEB-INF/classes/mx/tec/HugBox/utils/Conexion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HugBox/WEB-INF/classes/mx/tec/HugBox/utils/Conexion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mx/tec/HugBox/actions/DocumentsAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mx/tec/HugBox/actions/DocumentsAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mx/tec/HugBox/actions/FilesAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mx/tec/HugBox/actions/FilesAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mx/tec/HugBox/actions/LoginAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mx/tec/HugBox/actions/LoginAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mx/tec/HugBox/actions/SignUpAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mx/tec/HugBox/actions/SignUpAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mx/tec/HugBox/utils/Conexion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mx/tec/HugBox/utils/Conexion.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,10 +37,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/mx/tec/HugBox/services/DocumentsService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/mx/tec/HugBox/services/ILoginService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
+            <state relative-caret-position="60">
+              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -32,53 +48,33 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/mx/tec/HugBox/services/LoginService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-304">
-              <caret line="24" column="54" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
+            <state relative-caret-position="15">
+              <caret line="44" column="7" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/mx/tec/HugBox/actions/DocumentsAction.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/mx/tec/HugBox/actions/FilesAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="82" column="8" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="8" />
+            <state relative-caret-position="36">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#637#638#0" expanded="true" />
-                <element signature="e#664#665#0" expanded="true" />
-                <element signature="e#704#705#0" expanded="true" />
-                <element signature="e#736#737#0" expanded="true" />
-                <element signature="e#767#768#0" expanded="true" />
-                <element signature="e#794#795#0" expanded="true" />
-                <element signature="e#834#835#0" expanded="true" />
-                <element signature="e#866#867#0" expanded="true" />
-                <element signature="e#904#905#0" expanded="true" />
-                <element signature="e#935#936#0" expanded="true" />
-                <element signature="e#986#987#0" expanded="true" />
-                <element signature="e#1026#1027#0" expanded="true" />
-                <element signature="e#1061#1062#0" expanded="true" />
-                <element signature="e#1092#1093#0" expanded="true" />
-                <element signature="e#1140#1141#0" expanded="true" />
-                <element signature="e#1180#1181#0" expanded="true" />
-                <element signature="e#1231#1232#0" expanded="true" />
-                <element signature="e#1269#1270#0" expanded="true" />
-                <element signature="e#1340#1341#0" expanded="true" />
-                <element signature="e#1394#1395#0" expanded="true" />
-                <element signature="e#2400#2401#0" expanded="true" />
-                <element signature="e#2427#2428#0" expanded="true" />
-                <element signature="e#2496#2497#0" expanded="true" />
-                <element signature="e#2534#2535#0" expanded="true" />
+                <element signature="e#840#841#0" expanded="true" />
+                <element signature="e#878#879#0" expanded="true" />
+                <element signature="e#954#955#0" expanded="true" />
+                <element signature="e#1008#1009#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/home.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="57" column="20" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
+            <state relative-caret-position="335">
+              <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -86,17 +82,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/struts.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="55" column="70" lean-forward="true" selection-start-line="55" selection-start-column="70" selection-end-line="55" selection-end-column="70" />
+            <state relative-caret-position="202">
+              <caret line="55" column="70" selection-start-line="55" selection-start-column="70" selection-end-line="55" selection-end-column="70" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/mx/tec/HugBox/actions/LoginAction.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/mx/tec/HugBox/utils/Conexion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="44" column="13" lean-forward="true" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+            <state relative-caret-position="174">
+              <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -105,28 +101,50 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/appFiles.js">
+        <entry file="file://$PROJECT_DIR$/src/main/java/mx/tec/HugBox/actions/DocumentsAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+            <state relative-caret-position="299">
+              <caret line="81" selection-start-line="81" selection-end-line="81" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1101#1102#0" expanded="true" />
+                <element signature="e#1141#1142#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/appLogin.js">
+        <entry file="file://$PROJECT_DIR$/src/main/java/mx/tec/HugBox/actions/LoginAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="29" column="51" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
+            <state relative-caret-position="121">
+              <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="81" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/mx/tec/HugBox/services/IDocumentsService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/mx/tec/HugBox/actions/SignUpAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+            <state relative-caret-position="7">
+              <caret line="19" column="81" selection-start-line="19" selection-start-column="81" selection-end-line="19" selection-end-column="81" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#746#747#0" expanded="true" />
+                <element signature="e#776#777#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/home.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-667">
+              <caret line="57" selection-start-line="57" selection-end-line="57" />
             </state>
           </provider>
         </entry>
@@ -171,7 +189,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/registro.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/appFiles.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/stylesHome.css" />
-        <option value="$PROJECT_DIR$/src/main/java/mx/tec/HugBox/utils/Conexion.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/appLogin.js" />
         <option value="$PROJECT_DIR$/src/main/java/mx/tec/HugBox/services/IDocumentsService.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/genericDownload.jsp" />
@@ -179,14 +196,16 @@
         <option value="$PROJECT_DIR$/src/main/java/mx/tec/HugBox/models/Documents.java" />
         <option value="$PROJECT_DIR$/src/main/resources/struts.xml" />
         <option value="$PROJECT_DIR$/src/main/java/mx/tec/HugBox/interceptors/MyInterceptor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/mx/tec/HugBox/actions/SignUpAction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/mx/tec/HugBox/actions/FilesAction.java" />
         <option value="$PROJECT_DIR$/src/main/java/mx/tec/HugBox/services/ILoginService.java" />
         <option value="$PROJECT_DIR$/src/main/java/mx/tec/HugBox/services/LoginService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/mx/tec/HugBox/actions/LoginAction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/mx/tec/HugBox/actions/DocumentsAction.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/appFiles.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/home.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/mx/tec/HugBox/utils/Conexion.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mx/tec/HugBox/actions/LoginAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mx/tec/HugBox/actions/SignUpAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mx/tec/HugBox/actions/FilesAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mx/tec/HugBox/actions/DocumentsAction.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/log4j2.xml" />
       </list>
     </option>
   </component>
@@ -204,9 +223,9 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="6" />
-    <option name="y" value="24" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="109" />
+    <option name="y" value="65" />
     <option name="width" value="1400" />
     <option name="height" value="788" />
   </component>
@@ -278,7 +297,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -291,15 +310,15 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550842645846" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550912332846" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/webapp/css" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/css" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -427,10 +446,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40046000" />
+    <option name="totallyTimeSpent" value="40658000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="6" y="24" width="1400" height="788" extended-state="0" />
+    <frame x="24" y="23" width="1400" height="788" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
@@ -439,7 +458,7 @@
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Web" order="4" side_tool="true" />
       <window_info id="Designer" order="5" />
-      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.2496318" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.2496318" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
@@ -448,10 +467,10 @@
       <window_info anchor="bottom" id="Messages" order="4" weight="0.32902297" />
       <window_info anchor="bottom" id="Database Changes" order="5" />
       <window_info anchor="bottom" id="Version Control" order="6" />
-      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32902297" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.3275862" />
       <window_info anchor="bottom" id="Message" order="8" />
       <window_info anchor="bottom" id="Find" order="9" />
-      <window_info active="true" anchor="bottom" id="Run" order="10" visible="true" weight="0.40804598" />
+      <window_info anchor="bottom" id="Run" order="10" visible="true" weight="0.40804598" />
       <window_info anchor="bottom" id="Debug" order="11" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
@@ -587,18 +606,6 @@
         <state relative-caret-position="-1365" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/mx/tec/HugBox/utils/Conexion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getConnection#0;class#Conexion#0" />
-            <element signature="method#main#0;class#Conexion#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/mx/tec/HugBox/actions/SessionAction.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/mx/tec/HugBox/interceptors/MyInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -617,20 +624,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/mx/tec/HugBox/actions/SignUpAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="37" column="54" selection-start-line="37" selection-start-column="54" selection-end-line="37" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#746#747#0" expanded="true" />
-            <element signature="e#776#777#0" expanded="true" />
-            <element signature="e#845#846#0" expanded="true" />
-            <element signature="e#882#883#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/mx/tec/HugBox/services/ISignUp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -640,48 +633,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/mx/tec/HugBox/services/IDocumentsService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+        <state relative-caret-position="105">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="52" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/mx/tec/HugBox/services/DocumentsService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/mx/tec/HugBox/actions/DocumentsAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="82" column="8" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="8" />
+        <state relative-caret-position="1050">
+          <caret line="77" column="12" selection-start-line="77" selection-start-column="12" selection-end-line="77" selection-end-column="48" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#637#638#0" expanded="true" />
-            <element signature="e#664#665#0" expanded="true" />
-            <element signature="e#704#705#0" expanded="true" />
-            <element signature="e#736#737#0" expanded="true" />
-            <element signature="e#767#768#0" expanded="true" />
-            <element signature="e#794#795#0" expanded="true" />
-            <element signature="e#834#835#0" expanded="true" />
-            <element signature="e#866#867#0" expanded="true" />
-            <element signature="e#904#905#0" expanded="true" />
-            <element signature="e#935#936#0" expanded="true" />
-            <element signature="e#986#987#0" expanded="true" />
-            <element signature="e#1026#1027#0" expanded="true" />
-            <element signature="e#1061#1062#0" expanded="true" />
-            <element signature="e#1092#1093#0" expanded="true" />
-            <element signature="e#1140#1141#0" expanded="true" />
-            <element signature="e#1180#1181#0" expanded="true" />
-            <element signature="e#1231#1232#0" expanded="true" />
-            <element signature="e#1269#1270#0" expanded="true" />
-            <element signature="e#1340#1341#0" expanded="true" />
-            <element signature="e#1394#1395#0" expanded="true" />
-            <element signature="e#2400#2401#0" expanded="true" />
-            <element signature="e#2427#2428#0" expanded="true" />
-            <element signature="e#2496#2497#0" expanded="true" />
-            <element signature="e#2534#2535#0" expanded="true" />
+            <element signature="e#1782#1793#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -695,26 +657,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/mx/tec/HugBox/services/LoginService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-304">
-          <caret line="24" column="54" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/mx/tec/HugBox/actions/FilesAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#840#841#0" expanded="true" />
-            <element signature="e#878#879#0" expanded="true" />
-            <element signature="e#954#955#0" expanded="true" />
-            <element signature="e#1008#1009#0" expanded="true" />
-            <element signature="e#2014#2015#0" expanded="true" />
-            <element signature="e#2046#2047#0" expanded="true" />
-            <element signature="e#2119#2120#0" expanded="true" />
-            <element signature="e#2157#2158#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="15">
+          <caret line="44" column="7" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -732,23 +676,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/struts.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="55" column="70" lean-forward="true" selection-start-line="55" selection-start-column="70" selection-end-line="55" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/mx/tec/HugBox/actions/LoginAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="44" column="13" lean-forward="true" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/appFiles.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -758,8 +685,80 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/home.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="57" column="20" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
+        <state relative-caret-position="-667">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mx/tec/HugBox/utils/Conexion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mx/tec/HugBox/actions/LoginAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="81" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mx/tec/HugBox/actions/SignUpAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7">
+          <caret line="19" column="81" selection-start-line="19" selection-start-column="81" selection-end-line="19" selection-end-column="81" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#746#747#0" expanded="true" />
+            <element signature="e#776#777#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/struts.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="55" column="70" selection-start-line="55" selection-start-column="70" selection-end-line="55" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mx/tec/HugBox/actions/FilesAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#840#841#0" expanded="true" />
+            <element signature="e#878#879#0" expanded="true" />
+            <element signature="e#954#955#0" expanded="true" />
+            <element signature="e#1008#1009#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mx/tec/HugBox/actions/DocumentsAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="81" selection-start-line="81" selection-end-line="81" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1101#1102#0" expanded="true" />
+            <element signature="e#1141#1142#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
         </state>
       </provider>
     </entry>

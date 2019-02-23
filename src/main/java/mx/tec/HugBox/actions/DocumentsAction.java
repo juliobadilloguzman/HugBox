@@ -4,8 +4,11 @@ import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
 import mx.tec.HugBox.models.Documents;
 import mx.tec.HugBox.services.DocumentsService;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.apache.struts2.interceptor.SessionAware;
 
+import javax.servlet.Servlet;
 import java.io.FileInputStream;
 import java.util.Map;
 
@@ -59,10 +62,12 @@ public class DocumentsAction extends ActionSupport implements SessionAware, Mode
         this.fileInputStream = fileInputStream;
     }
 
+    private static Logger logger = LogManager.getLogger(Servlet.class.getName());
+
     @Override
     public String execute() throws Exception {
-        System.out.println("El li¡nk es:");
-        System.out.println(link);
+
+        logger.info("El hash generado es: " + link);
 
         DocumentsService _documentService = new DocumentsService();
         document = _documentService.linkADocument(link);
@@ -73,18 +78,12 @@ public class DocumentsAction extends ActionSupport implements SessionAware, Mode
 
         filename = document.getFilename().concat(document.getType());
 
-        System.out.println("El file es: + " + document.getFilename());
-        System.out.println("El tipo es: " +  document.getType());
-
-        System.out.println("Concatenado es: " + document.getFilename().concat(document.getType()));
-
         fileInputStream = new FileInputStream(document.getContent());
 
-        System.out.println("El input stream es: " +  this.getFileInputStream());
 
         return SUCCESS;
-        //fileInputStream = new FileInputStream(document.getContent());
-        //return DOWNLOAD;
+
+
     }
     public String linkDownload(){
 
