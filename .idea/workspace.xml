@@ -6,26 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="24ffe5a9-95fb-4cb3-9829-74671be4876e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mx/tec/HugBox/actions/DocumentsAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/tec/HugBox/actions/DocumentsAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mx/tec/HugBox/actions/FilesAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/tec/HugBox/actions/FilesAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mx/tec/HugBox/actions/LoginAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/tec/HugBox/actions/LoginAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mx/tec/HugBox/actions/SignUpAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/tec/HugBox/actions/SignUpAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mx/tec/HugBox/utils/Conexion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/tec/HugBox/utils/Conexion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HugBox.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/HugBox.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HugBox/WEB-INF/classes/mx/tec/HugBox/actions/DocumentsAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HugBox/WEB-INF/classes/mx/tec/HugBox/actions/DocumentsAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HugBox/WEB-INF/classes/mx/tec/HugBox/actions/FilesAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HugBox/WEB-INF/classes/mx/tec/HugBox/actions/FilesAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HugBox/WEB-INF/classes/mx/tec/HugBox/actions/LoginAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HugBox/WEB-INF/classes/mx/tec/HugBox/actions/LoginAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HugBox/WEB-INF/classes/mx/tec/HugBox/actions/SignUpAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HugBox/WEB-INF/classes/mx/tec/HugBox/actions/SignUpAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HugBox/WEB-INF/classes/mx/tec/HugBox/utils/Conexion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HugBox/WEB-INF/classes/mx/tec/HugBox/utils/Conexion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mx/tec/HugBox/actions/DocumentsAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mx/tec/HugBox/actions/DocumentsAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mx/tec/HugBox/actions/FilesAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mx/tec/HugBox/actions/FilesAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mx/tec/HugBox/actions/LoginAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mx/tec/HugBox/actions/LoginAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mx/tec/HugBox/actions/SignUpAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mx/tec/HugBox/actions/SignUpAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mx/tec/HugBox/utils/Conexion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mx/tec/HugBox/utils/Conexion.class" afterDir="false" />
-    </list>
+    <list default="true" id="24ffe5a9-95fb-4cb3-9829-74671be4876e" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -73,8 +54,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+            <state relative-caret-position="43">
+              <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -211,9 +192,9 @@
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
-    <option name="FILTER_WARNINGS" value="false" />
-    <option name="FILTER_INFO" value="false" />
-    <option name="FILTER_DEBUG" value="false" />
+    <option name="FILTER_WARNINGS" value="true" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" value="" />
   </component>
   <component name="MavenImportPreferences">
@@ -310,7 +291,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550912332846" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550912551858" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -446,11 +427,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40658000" />
+    <option name="totallyTimeSpent" value="40929000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="24" y="23" width="1400" height="788" extended-state="0" />
-    <editor active="true" />
+    <frame x="109" y="65" width="1400" height="788" extended-state="0" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Capture Tool" order="1" />
@@ -458,7 +438,7 @@
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Web" order="4" side_tool="true" />
       <window_info id="Designer" order="5" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.2496318" />
+      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.2496318" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
@@ -470,7 +450,7 @@
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.3275862" />
       <window_info anchor="bottom" id="Message" order="8" />
       <window_info anchor="bottom" id="Find" order="9" />
-      <window_info anchor="bottom" id="Run" order="10" visible="true" weight="0.40804598" />
+      <window_info active="true" anchor="bottom" id="Run" order="10" visible="true" weight="0.40804598" />
       <window_info anchor="bottom" id="Debug" order="11" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
@@ -757,8 +737,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+        <state relative-caret-position="43">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
         </state>
       </provider>
     </entry>
